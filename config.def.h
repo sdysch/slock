@@ -3,7 +3,7 @@ static const char *user  = "nobody";
 static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "black",     /* after initialization */
+	[INIT] =   "blue",     /* after initialization */
 	[INPUT] =  "#005577",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 };
@@ -37,3 +37,8 @@ ResourcePref resources[] = {
 		{ "background",   STRING,  &colorname[258] },
 		{ "foreground",   STRING,  &colorname[259] },
 };
+
+/* for messaging */
+static char* text_color = "black";
+static char* message    = "Enter password to unlock.";
+static char *font_name  = "6x13";
