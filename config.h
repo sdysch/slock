@@ -3,9 +3,9 @@ static const char *user  = "nobody";
 static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "blue",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
+	[INIT]   = "#ECEFF4",     /* after initialization */
+	[INPUT]  = "#5E81AC",   /* during input */
+	[FAILED] = "#BF616A",   /* wrong password */
 };
 
 /* treat a cleared input like a wrong password (color) */
@@ -40,5 +40,6 @@ ResourcePref resources[] = {
 
 /* for messaging */
 static char* text_color = "black";
-static char* message    = "Enter password to unlock.";
+static char* message    = "Locked at $(date)";
+//static char* message    = "Enter password to unlock.";
 static char *font_name  = "6x13";
