@@ -1,4 +1,4 @@
 *.orig
 *.rej
 slock
-
+config.h
